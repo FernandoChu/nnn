@@ -161,7 +161,7 @@ static struct key bindings[] = {
 	{ 'G',            SEL_END },
 	{ CONTROL('E'),   SEL_END },
 	/* Go to first file */
-	{ '\'',           SEL_FIRST },
+	{ 'f',           SEL_FIRST },
 	/* Jump to an entry number/offset */
 	{ 'J',            SEL_JUMP },
 	/* HOME */
@@ -173,7 +173,7 @@ static struct key bindings[] = {
 	/* Go to / */
 	{ '`',            SEL_CDROOT },
 	/* Leader key */
-	{ 'b',            SEL_BMOPEN },
+	{ '\'',            SEL_BMOPEN },
 	{ CONTROL('_'),   SEL_BMOPEN },
 	/* Connect to server over SSHFS */
 	{ 'c',            SEL_REMOTE },
@@ -205,7 +205,6 @@ static struct key bindings[] = {
 	/* Detailed listing */
 	{ 'd',            SEL_DETAIL },
 	/* File details */
-	{ 'f',            SEL_STATS },
 	{ CONTROL('F'),   SEL_STATS },
 	/* Toggle executable status */
 	{ '*',            SEL_CHMODX },
